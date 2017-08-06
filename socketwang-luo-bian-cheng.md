@@ -87,7 +87,7 @@ while True:
     # 注意 参数 5 的含义不必关心
     s.listen(5)
     # 当有客户端过来连接的时候, s.accept 函数就会返回 2 个值
-    # 分别是 连接 和 客户端 ip 地址
+    # 分别是 连接 和 客户端 ip 地址, address是一个type类型
     connection, address = s.accept()
 
     # recv 可以接收客户端发送过来的数据
