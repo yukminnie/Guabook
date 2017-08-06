@@ -93,6 +93,7 @@ while True:
     # recv 可以接收客户端发送过来的数据
     # 参数是要接收的字节数
     # 返回值是一个 bytes 类型
+    # 以后会用while循环全部接收
     request = connection.recv(1024)
 
     # bytes 类型调用 decode('utf-8') 来转成一个字符串(str)
