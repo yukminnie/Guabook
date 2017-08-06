@@ -33,6 +33,7 @@ ip地址,ip地址记不住了,就发明了dns服务器
 ```
 GET / HTTP/1.1
 Host: g.cn
+Connection: keep-alive       减少页面的请求次数
 
 #其中
 1. GET 是请求方法（还有POST等，这就是个标志字符串而已）
@@ -105,8 +106,8 @@ while True:
     connection.sendall(response)
     # 发送完毕后, 关闭本次连接
     connection.close()
-    
-    
+
+
 #拓展,循环取数据
 
 buffer_size = 1000
