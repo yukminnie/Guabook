@@ -105,6 +105,17 @@ while True:
     connection.sendall(response)
     # 发送完毕后, 关闭本次连接
     connection.close()
+    
+    
+#拓展,循环取数据
+
+buffer_size = 1000
+r = b''
+while True:
+    request = connection.recv(buffer_size)
+    r += request
+    if len(request) < buffer_size
+        break
 ```
 
 6.socket实现客户端
