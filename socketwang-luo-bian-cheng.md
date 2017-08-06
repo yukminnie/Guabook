@@ -156,5 +156,15 @@ print('响应', response)
 print('响应的 str 格式', response.decode('utf-8'))
 ```
 
+7.编码
+
+```
+ASCII 编码 
+
+gb2312   gbk(windows简体中文版本)    gb18030  中文编码
+
+unicode   utf-8(安卓,苹果)           通用编码
+```
+
 
 
