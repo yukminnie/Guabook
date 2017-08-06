@@ -65,7 +65,6 @@ X-XSS-Protection: 1; mode=block
 5.socket实现服务端
 
 ```
-
 # 这个程序就是一个套路程序, 套路程序没必要思考为什么会是这样
 # 记住套路, 能用, 就够了
 # 运行这个程序后, 浏览器打开 localhost:2000 就能访问了
@@ -105,10 +104,7 @@ while True:
     connection.sendall(response)
     # 发送完毕后, 关闭本次连接
     connection.close()
-
 ```
-
-
 
 6.socket实现客户端
 
@@ -157,10 +153,7 @@ response = s.recv(1023)
 print('响应', response)
 # 转成 str 再输出
 print('响应的 str 格式', response.decode('utf-8'))
-
 ```
-
-
 
 
 
