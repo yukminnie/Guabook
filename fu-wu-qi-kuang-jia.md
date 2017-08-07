@@ -1,4 +1,4 @@
-1.奠定基础
+1.解析网址,基础知识
 
 ```
 def parsed_url(url):
@@ -111,7 +111,17 @@ def get(url):
         return get(url)
 
     return status_code, headers, body
+    
+    
 ```
+
+2.插曲
+
+```
+code ---> reformat code
+```
+
+
 
 
 
