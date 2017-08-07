@@ -117,6 +117,15 @@ while True:
     r += request
     if len(request) < buffer_size
         break
+================================================================================================        
+buffer_size = 1000
+r = b''
+while True:
+    request = connection.recv(buffer_size)
+    if len(request) == 0:
+        break
+    r += request
+
 ```
 
 6.socket实现客户端
