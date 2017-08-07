@@ -64,7 +64,7 @@ def response_by_socket(s):
     while True:
         r = s.recv(buffer_size)
         response += r
-        if len(r) == 0:
+        if len(r) < buffer_size:
             break
     return response
 
