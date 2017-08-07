@@ -111,17 +111,13 @@ def get(url):
         return get(url)
 
     return status_code, headers, body
-    
-    
 ```
 
-2.插曲
+2.插曲,格式化代码
 
 ```
 code ---> reformat code
 ```
-
-
 
 
 
