@@ -63,10 +63,10 @@ def response_by_socket(s):
     buffer_size = 1024
     while True:
         r = s.recv(buffer_size)
+        response += r
         if len(r) == 0:
             break
-        response += r
-    return response
+        return response
 
 
 def parsed_response(r):
@@ -111,7 +111,6 @@ def get(url):
         return get(url)
 
     return status_code, headers, body
-
 ```
 
 
