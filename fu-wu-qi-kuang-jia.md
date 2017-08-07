@@ -1,4 +1,4 @@
-1.解析网址,基础知识
+1.基础1,解析网址
 
 ```
 def parsed_url(url):
@@ -117,6 +117,31 @@ def get(url):
 
 ```
 code ---> reformat code
+```
+
+3.基础2,log函数
+
+```
+def log(*args, **kwargs):
+    """
+    用这个 log 替代 print
+    """
+    print('log', *args, **kwargs)
+```
+
+4.关于main\(\)函数
+
+```
+main函数应该置于__name__中
+```
+
+5.关于字典的写法
+
+```
+config = dict(
+        host='',
+        port=3000,
+    )    
 ```
 
 
