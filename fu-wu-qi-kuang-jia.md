@@ -66,7 +66,7 @@ def response_by_socket(s):
         response += r
         if len(r) == 0:
             break
-        return response
+    return response
 
 
 def parsed_response(r):
