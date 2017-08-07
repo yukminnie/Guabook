@@ -141,7 +141,9 @@ main函数应该置于__name__中
 config = dict(
         host='',
         port=3000,
-    )    
+    )
+   
+run(**config)
 ```
 
 
