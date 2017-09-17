@@ -14,6 +14,8 @@
    2. 对称加密，指对cookie进行加密，收到cookie后服务器进行解密
 9. session过期时间可以通过在session\_id中增加时间数据，来进行判定
 10. session共享，通过session服务器进行实现
-11. 
+11. cookie失效可以通过，使服务器session失效来进行实现
+
+12. 
 
 
